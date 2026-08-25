@@ -1,0 +1,25 @@
+#galeria {
+    background: #fff;
+    padding-block: 0;
+}
+
+#galeria img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+#galeria .swiper-button-next {
+    top: 50%;
+    color: #ffffff;
+    transform: scale(.5);
+
+}
+
+#galeria .swiper-button-prev {
+    top: 50%;
+    color: #ffffff;
+    transform: scale(.5);
+
+}

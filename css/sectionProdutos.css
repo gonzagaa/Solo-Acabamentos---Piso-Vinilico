@@ -1,0 +1,109 @@
+#produtos {
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+}
+
+#produtos .card {
+    padding-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#produtos .card .text {
+    flex: 1;
+    display: flex;
+}
+
+#produtos .card .text h3 {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#produtos .card img {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+}
+
+#produtos .swiper-pagination-bullet {
+    background-color: #0000005f; 
+    opacity: 1; 
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+}
+  
+#produtos .swiper-pagination-bullet-active {
+    background-color: #000000; 
+}
+
+#produtos .swiper-button-next {
+    top: 45%;
+    color: #000000; 
+    transform: scale(.5);
+}
+  
+#produtos .swiper-button-prev {
+    top: 45%;
+    color: #000000; 
+    transform: scale(.5);
+}
+
+#produtos h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 2rem 4rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    margin-top: -.4rem;
+
+    text-align: center;
+}
+
+#produtos h3 span {
+    font-weight: 700;
+}
+
+#produtos p {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+
+    padding: 1rem;
+}
+
+#produtos p span {
+    font-weight: 600;
+}
+
+#produtos a button {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 1080px) {
+    section#produtos a button {
+        font-size: 2rem;
+    }
+
+    section#produtos p {
+        margin-top: .5rem;
+        padding-inline: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    section#produtos .card {
+        padding-bottom: 0;
+    }
+
+    section#produtos a button {
+        margin-top: 3rem;
+    }
+}
