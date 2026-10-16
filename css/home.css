@@ -186,6 +186,49 @@
 
 }
 
+/* caixinhas de tipos ================ */
+#home .tipos-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .8rem;
+
+  width: 100%;
+  margin-top: 2.4rem;
+}
+
+#home .tipo-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid #e6dbc4;
+  background: #ffffffc2;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px #364c590f;
+
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #1b1b1b;
+}
+
+#home .tipo-box-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: .9rem;
+  background: var(--bege);
+
+  color: #fff;
+  font-size: 1.6rem;
+}
+
 @media (min-width: 768px) {
 }
 
@@ -195,7 +238,7 @@
     justify-content: center;
     position: relative;
 
-    height: 85vh;
+    height: 95vh;
     z-index: 1;
 
     border-radius: 0;
@@ -272,6 +315,24 @@
 
   header#home .topics {
     justify-content: start;
+  }
+
+  header#home .tipos-box {
+    max-width: 46rem;
+    gap: .8rem;
+    margin-top: 2.4rem;
+  }
+
+  header#home .tipo-box {
+    padding: .8rem 1rem;
+    font-size: 1.25rem;
+  }
+
+  header#home .tipo-box-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: .8rem;
+    font-size: 1.4rem;
   }
 
   header#home .topics .topic p {

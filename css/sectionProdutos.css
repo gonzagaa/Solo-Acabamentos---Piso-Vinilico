@@ -72,6 +72,10 @@
     transition: transform 800ms ease;
 }
 
+#produtos .tipo-img img.img-base {
+    object-position: center bottom;
+}
+
 #produtos .tipo .num {
     position: absolute;
     right: 1.6rem;
