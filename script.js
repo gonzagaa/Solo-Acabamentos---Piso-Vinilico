@@ -1,3 +1,8 @@
+AOS.init(
+  {
+    duration: 1500,
+  }
+);
 
 const larguraDaTela = window.innerWidth
 
@@ -61,7 +66,16 @@ if (larguraDaTela < 800) {
     });
 }
 
+// Scroll suave
+const lenis = new Lenis({
+  smooth: true, // Ativa o scroll suave
+  duration: 1.1, // Define a duração do scroll (maior valor deixa mais lento)
+  easing: (t) => 1 - Math.pow(1 - t, 4), // Função de easing para suavidade
+});
 
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-
-
+requestAnimationFrame(raf);

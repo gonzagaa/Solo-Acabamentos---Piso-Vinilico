@@ -186,6 +186,29 @@
 
 }
 
+/* animação de entrada do topo (CSS, sem esperar o JS) */
+@keyframes heroFadeUpRight {
+  from {
+    opacity: .1;
+    transform: translate3d(-100px, 100px, 0);
+  }
+}
+
+@keyframes heroFadeUpLeft {
+  from {
+    opacity: .1;
+    transform: translate3d(100px, 100px, 0);
+  }
+}
+
+#home .text > * {
+  animation: heroFadeUpRight 1.5s ease both;
+}
+
+#home .swiper {
+  animation: heroFadeUpLeft 1.5s ease both;
+}
+
 /* caixinhas de tipos ================ */
 #home .tipos-box {
   display: grid;
